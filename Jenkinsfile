@@ -7,7 +7,7 @@ labels:
   jenkins/label: "jenkins-jenkins-agent"
 spec:
   securityContext:
-    fsGroup: 121    # Group ID of docker group on k8s nodes.
+    fsGroup: 1950 # Group ID of docker group on k8s nodes.
   serviceAccountName: jenkins
   containers:
   - name: topgun
