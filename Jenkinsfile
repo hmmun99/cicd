@@ -116,7 +116,7 @@ pipeline {
             steps {     
                 container('topgun') {
                     script {
-                        docker.withRegistry('https://registry.hub.docker.com', 'docker') {
+                        docker.withRegistry('https://registry.hub.docker.com', 'hemyjoa') {
                             app.push("${env.BUILD_NUMBER}")
                             app.push("latest")
                         }
